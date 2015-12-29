@@ -80,5 +80,7 @@ FILENAME defaults to `buffer-file-name'."
 (org-babel-load-file (expand-file-name "ome.org" ome-dir))
 
 ;;; init.el ends here
+;;; 个人配置
 (0blayout-mode 1)
-(0blayout-add-keybindings-with-prefix "C-c C-l")
+(0blayout-add-keybindings-with-prefix "C-l")
+
