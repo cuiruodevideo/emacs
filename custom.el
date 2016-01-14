@@ -305,3 +305,7 @@ inversion of gas-comment-region"
 
 (add-hook 'eshell-mode-hook #'(lambda () (setq ac-sources '(ac-source-pcomplete))))
 (add-to-list 'ac-modes 'eshell-mode)
+
+(add-hook 'shell-mode-hook
+          (lambda () (add-function :override (local 'completion-in-region-function)
+                                   #'completion--in-region)))
