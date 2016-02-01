@@ -309,3 +309,5 @@ inversion of gas-comment-region"
 (add-hook 'shell-mode-hook
           (lambda () (add-function :override (local 'completion-in-region-function)
                                    #'completion--in-region)))
+(add-hook 'inferior-lisp-mode-hook
+          (lambda () (inferior-slime-mode t)))
